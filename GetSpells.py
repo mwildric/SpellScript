@@ -19,11 +19,11 @@ targets = tree.xpath('//b[starts-with(text(),\'Targets\')]/following-sibling::te
 throw = tree.xpath('//b[starts-with(text(),\'Saving Throw\')]/following-sibling::text()[1]')
 
 
-text = re.findall( r'(?<=<hr />).*(?=(<hr />|$|</span>))' , page.content.decode('utf-8'))
+text = re.findall( r'((?<=<hr>)|(?<=<hr />)).*?(?=(<hr ?/?>|</span>))' , page.content.decode('utf-8'))
 print(text)
 
 
-heighten = re.findall( r'(?<=Heightened )\((.*?)\)</b> (.*?)(<b?|$)' , page.content.decode('utf-8'))
+heighten = re.findall( r'(?<=Heightened )\((.*?)\)</b> (.*?)(<b>|</span>)' , page.content.decode('utf-8'))
 print(heighten)
 
 #heightened = tree.xpath('//b[starts-with(text(),\'Heightened\')]/following-sibling::text()')
