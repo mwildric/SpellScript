@@ -1,75 +1,28 @@
-Aerial-Form:
-  area: null
+Detect-Alignment:
+  area: 30-foot emanation
   casting: ''
   description:
     main:
-    - 'You harness your mastery of primal forces to reshape your body into a Medium
-      flying animal battle form. When you cast this spell, choose bat, bird, pterosaur,
-      or wasp. You can decide the specific type of animal (such as an owl or eagle
-      for bird), but this has no effect on the form''s Size or statistics. While in
-      this form, you gain the animal trait. You can Dismiss the spell. You gain the
-      following statistics and abilities regardless of which battle form you choose:
-      <ul><li>AC = 18 + your level. Ignore your armor''s check penalty and Speed reduction.
-      </li><li>5 temporary Hit Points. </li><li>Low-light vision. </li><li>One or
-      more unarmed melee attacks specific to the battle form you choose, which are
-      the only attacks you can use. You''re trained with them. Your attack modifier
-      is +16, and your damage bonus is +5. These attacks are Dexterity based (for
-      the purpose of the clumsy condition, for example). If your attack modifier for
-      Dexterity-based unarmed attacks is higher, you can use it instead. </li><li>Acrobatics
-      modifier of +16, unless your own modifier is higher.</li></ul> You also gain
-      specific abilities based on the form you choose:<ul><li><b>Bat</b> Speed 20
-      feet, fly Speed 30 feet; precise echolocation 40 feet; <b>Melee</b> <img class="actiondark"
-      alt="Single Action" style="height:15px; padding:0px 2px 0px 2px" src="Images\Actions\OneAction.png"><img
-      class="actionlight" alt="Single Action" style="height:15px; padding:0px 2px
-      0px 2px" src="Images\Actions\OneAction_I.png"> fangs, <b>Damage</b> 2d8 piercing;
-      <b>Melee</b> <img class="actiondark" alt="Single Action" style="height:15px;
-      padding:0px 2px 0px 2px" src="Images\Actions\OneAction.png"><img class="actionlight"
-      alt="Single Action" style="height:15px; padding:0px 2px 0px 2px" src="Images\Actions\OneAction_I.png">
-      wing (agile), <b>Damage</b> 2d6 bludgeoning.</li><li><b>Bird</b> Speed 10 feet,
-      fly Speed 50 feet; <b>Melee</b> <img class="actiondark" alt="Single Action"
-      style="height:15px; padding:0px 2px 0px 2px" src="Images\Actions\OneAction.png"><img
-      class="actionlight" alt="Single Action" style="height:15px; padding:0px 2px
-      0px 2px" src="Images\Actions\OneAction_I.png"> beak, <b>Damage</b> 2d8 piercing;
-      <b>Melee</b> <img class="actiondark" alt="Single Action" style="height:15px;
-      padding:0px 2px 0px 2px" src="Images\Actions\OneAction.png"><img class="actionlight"
-      alt="Single Action" style="height:15px; padding:0px 2px 0px 2px" src="Images\Actions\OneAction_I.png">
-      talon (agile), <b>Damage</b> 1d10 slashing.</li><li><b>Pterosaur</b> Speed 10
-      feet, fly Speed 40 feet; imprecise scent 30 feet; <b>Melee</b> <img class="actiondark"
-      alt="Single Action" style="height:15px; padding:0px 2px 0px 2px" src="Images\Actions\OneAction.png"><img
-      class="actionlight" alt="Single Action" style="height:15px; padding:0px 2px
-      0px 2px" src="Images\Actions\OneAction_I.png"> beak, <b>Damage</b> 3d6 piercing.</li><li><b>Wasp</b>
-      Speed 20 feet, fly Speed 40 feet; <b>Melee</b> <img class="actiondark" alt="Single
-      Action" style="height:15px; padding:0px 2px 0px 2px" src="Images\Actions\OneAction.png"><img
-      class="actionlight" alt="Single Action" style="height:15px; padding:0px 2px
-      0px 2px" src="Images\Actions\OneAction_I.png"> stinger, <b>Damage</b> 1d8 piercing
-      plus 1d6 persistent poison.</li></ul>'
-  duration: 1 minute
+    - "Your eyes glow as you sense aligned auras. Choose chaotic, evil, good, or lawful.\
+      \ You detect auras of that alignment. You receive no information beyond presence\
+      \ or absence. You can choose not to detect creatures or effects you're aware\
+      \ have that alignment.<br /><br /> Only creatures of 6th level or higher\u2014\
+      unless divine spellcasters, undead, or beings from the Outer Sphere\u2014have\
+      \ alignment auras."
+  duration: null
   heightened:
-  - !!python/tuple
-    - 5th
-    - Your battle form is Large and your fly Speed gains a +10-foot status bonus.
-      You must have enough space to expand into or the spell is lost. You instead
-      gain 10 temporary HP, attack modifier +18, damage bonus +8, and Acrobatics +20.<br
-      />
-    - <b>
-  - !!python/tuple
-    - 6th
-    - Your battle form is Huge, your fly Speed gains a +15-foot status bonus, and
-      your attacks have 10-foot reach. You must have enough space to expand into or
-      the spell is lost. You instead gain AC = 21 + your level, 15 temporary HP, attack
-      modifier +21, damage bonus +4 and double damage dice (including persistent damage),
-      and Acrobatics +23.
-    - </span>
-  level: '4'
-  name: Aerial Form
+  - 2nd: You learn each aura's location and strength.
+  level: '1'
+  name: Detect Alignment
   range: null
-  rarity: ''
+  rarity: 1
   saving throw: null
   target: null
   traditions:
-  - arcane
-  - primal
+  - divine
+  - occult
   traits:
-  - Polymorph
-  - Transmutation
+  - Uncommon
+  - Detection
+  - Divination
   type: Spell

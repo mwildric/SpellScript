@@ -3,8 +3,13 @@ import requests
 import re
 import yaml
 
-def formatHeightened(heightened):
-    return heightened
+def formatHeightened(heightenedList):
+    formattedList = []
+    for item in heightenedList:
+        print(item)
+        formattedList.append({item[0]:item[1]})
+    return formattedList
+
 
 def cleanupList(list):
     formattedList = []
@@ -18,12 +23,21 @@ def cleanup(attr):
     else:
         return 
 
+def getRarity(traits):
+    print(traits)
+    if('Uncommon' in traits):
+        return 1
+    if('Rare' in traits):
+        return 2
+    else:
+        return 0
 
-page = requests.get('https://2e.aonprd.com/Spells.aspx?ID=4')
+
+page = requests.get('https://2e.aonprd.com/Spells.aspx?ID=65')
 tree = html.fromstring(page.content)
 
 name = tree.xpath('//h1[@class="title"]/text()')[0].strip()
-traits = tree.xpath('//span[@class="trait"]/a/text()')
+traits = tree.xpath('//span[starts-with(@class,"trait")]/a/text()')
 
 title = tree.xpath('//h1[@class="title"]/span/text()')[0]
 titleList = title.split(' ')
@@ -54,7 +68,7 @@ yaml.dump(
             'traditions': cleanupList(traditions),
             'level': level,
             'type': spelltype,
-            'rarity': "",
+            'rarity': getRarity( cleanupList(traits)),
             'casting': "",
             'area':cleanup(area),
             'range':cleanup(spellrange),
