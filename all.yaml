@@ -1,0 +1,46 @@
+area: []
+casting: ''
+description:
+  main:
+  - Vicious claws grow from your fingers. They are finesse unarmed attacks that deal
+    1d4 slashing damage and 1d6 extra damage of a type determined by the dragon in
+    your bloodline. <h2>Dragon Claws</h2><table class="inner"> <tr><td><b>Dragon Type</b></td><td><b>Area
+    and Damage Type</b></td><td><b>Saving Throw</b></td></tr> <tr><td>Black and copper</td><td>60-foot
+    line of acid</td><td>Reflex</td></tr> <tr><td>Blue and bronze</td><td>60-foot
+    line of electricity</td><td>Reflex</td></tr> <tr><td>Brass</td><td>60-foot line
+    of fire</td><td>Reflex</td></tr> <tr><td>Green</td><td>30-foot cone of poison</td><td>Fortitude</td></tr>
+    <tr><td>Gold or red</td><td>30-foot cone of fire</td><td>Reflex</td></tr> <tr><td>Silver
+    or white</td><td>30-foot cone of cold</td><td>Reflex</td></tr> </table> Your scales
+    from blood magic glow with faint energy, giving you resistance 5 to the same damage
+    type.
+duration:
+- !!python/object/new:lxml.etree._ElementUnicodeResult
+  - ' 1 minute'
+heightened:
+- !!python/tuple
+  - 5th
+  - The extra damage increases to 2d6, and the resistance increases to 10.<br />
+  - <b>
+- !!python/tuple
+  - 9th
+  - The extra damage increases to 3d6, and the resistance increases to 15.
+  - </span>
+level:
+- !!python/object/new:lxml.etree._ElementUnicodeResult
+  - Focus 1
+name:
+- !!python/object/new:lxml.etree._ElementUnicodeResult
+  - ' Dragon Claws'
+range: []
+rarity: ''
+saving throw: []
+target: []
+traditions: []
+traits:
+- !!python/object/new:lxml.etree._ElementUnicodeResult
+  - Morph
+- !!python/object/new:lxml.etree._ElementUnicodeResult
+  - Sorcerer
+- !!python/object/new:lxml.etree._ElementUnicodeResult
+  - Transmutation
+type: ''
